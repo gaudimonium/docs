@@ -3,3 +3,10 @@
 ---
 
 imports:
+  netlify-cms: static/admin
+
+git module netlify-cms:
+  url: https://gitlab.com/gaudimonium/components/netlify-cms.git
+  pick:
+    - index.html
+  rev: 325da797dfa5a42616955c923899a4dcfa12fce6

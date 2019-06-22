@@ -15,16 +15,10 @@ deps:
 dev-server:
 	$(DEVD) $(DEVD_OPTS)
 
-build: deps
+build:
 	mkdir -p $(BLD_DIR)
 	$(RSYNC) -avP --delete $(SRC_DIR)/static/* $(BLD_DIR)/
 	$(HUGO) $(HUGO_OPTS)
-
-netlify-env:
-	pip install peru
-
-netlify-build: netlify-env
-	$(MAKE) build
 
 watch:
 	$(MODD)

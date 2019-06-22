@@ -1,7 +1,7 @@
 [build]
   base = "."
-  command = "make netlify-build"
+  command = "make build"
   publish = "public"
 
 [context.deploy-preview]
-  command = "make netlify-build"
+  command = "make build"

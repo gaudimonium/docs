@@ -24,5 +24,4 @@ watch:
 	$(MODD)
 
 clean:
-	$(PERU) clean
 	rm -rf $(BLD_DIR)
